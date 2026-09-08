@@ -1,0 +1,941 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certifications - Mohamed Asmathulla G</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Official website of Mohamed Asmathulla G – Developer, Innovator, and Tech Enthusiast. View projects, skills, and contact info.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528883210742461"
+      crossorigin="anonymous"></script>
+  <meta name="keywords" content="Mohamed Asmathulla G, Mohamed Asmathulla, Developer, Programmer, Portfolio, Netlify website">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B7V24RVQR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3B7V24RVQR');
+  </script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo_main.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo_main.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo_main.png">
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #9aa7b6;
+      --accent: #6ee7b7;
+      --accent-dark: #10b981;
+      --accent-light: #a7f3d0;
+      --glass: rgba(255, 255, 255, 0.03);
+      --glass-2: rgba(255, 255, 255, 0.02);
+      --text: #e6eef6;
+      --text-secondary: #94a3b8;
+      --shadow: rgba(3, 6, 12, 0.6);
+      --gradient: linear-gradient(135deg, #0ea5a4, #4ade80);
+      --gradient-dark: linear-gradient(135deg, #0d9488, #10b981);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #071022 0%, #081428 60%);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      transition: all 0.3s ease;
+    }
+
+    /* Light Theme */
+    body.light-theme {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --muted: #64748b;
+      --accent: #0ea5a4;
+      --accent-dark: #0d9488;
+      --accent-light: #14b8a6;
+      --glass: rgba(0, 0, 0, 0.03);
+      --glass-2: rgba(0, 0, 0, 0.02);
+      --text: #1e293b;
+      --text-secondary: #475569;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #0ea5a4, #4ade80);
+      --gradient-dark: linear-gradient(135deg, #0d9488, #10b981);
+      background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 60%);
+    }
+
+    body.light-theme .panel {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+      box-shadow: 0 8px 30px var(--shadow);
+    }
+
+    body.light-theme .cert-card,
+    body.light-theme .stat-card {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    body.light-theme header {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    body.light-theme .mobile-nav {
+      background: var(--card);
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(8, 12, 20, 0.8), rgba(8, 12, 20, 0.4));
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      transition: all 0.3s ease;
+    }
+
+    header.scrolled {
+      padding: 8px 22px;
+      background: rgba(8, 12, 20, 0.9);
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .logo {
+      height: 48px;
+      width: 48px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient);
+      color: #042;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 6px 18px var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(3, 6, 12, 0.8);
+    }
+
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    nav a:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    nav a.active {
+      color: var(--accent);
+    }
+
+    nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* Container & Layout */
+    .container {
+      max-width: 1100px;
+      margin: 28px auto;
+      padding: 0 18px;
+      width: 100%;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 8px 30px var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--gradient);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .panel:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(3, 6, 12, 0.8);
+    }
+
+    .panel:hover::before {
+      opacity: 1;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-bottom: 22px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .hero h1 {
+      margin: 0 0 6px 0;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--text), var(--accent-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .subtitle {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    /* Certifications Grid */
+    .certifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .cert-card {
+      background: var(--glass-2);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.02);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cert-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--gradient);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0 6px 16px rgba(3, 6, 12, 0.4);
+    }
+
+    .cert-card:hover::before {
+      opacity: 1;
+    }
+
+    .cert-number {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--gradient);
+      color: #042;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .cert-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .cert-provider {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .cert-category {
+      display: inline-block;
+      padding: 4px 8px;
+      background: rgba(110, 231, 183, 0.1);
+      color: var(--accent);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+    /* Stats Section */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .stat-card {
+      background: var(--glass);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.02);
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .stat-number {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 28px 0;
+      text-align: center;
+      color: var(--muted);
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--accent);
+      border: 1px solid rgba(255, 255, 255, 0.02);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 13px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--accent-light);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(3, 6, 12, 0.3);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Progress Bar */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: var(--gradient);
+      z-index: 100;
+      transition: width 0.3s ease;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--muted);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 10px;
+    }
+
+    .theme-toggle:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+    }
+
+    /* Mobile Menu */
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-size: 24px;
+      cursor: pointer;
+      margin-left: auto;
+      z-index: 60;
+    }
+
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      max-width: 300px;
+      height: 100vh;
+      background: var(--card);
+      z-index: 50;
+      padding: 80px 20px 20px;
+      transition: right 0.3s ease;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+      overflow-y: auto;
+    }
+
+    .mobile-nav.active {
+      right: 0;
+    }
+
+    .mobile-nav a {
+      display: block;
+      padding: 12px 0;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      transition: color 0.2s ease;
+    }
+
+    .mobile-nav a:hover, .mobile-nav a.active {
+      color: var(--accent);
+    }
+
+    .mobile-nav-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 55;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+      
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      .certifications-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px auto;
+      }
+      
+      .panel {
+        padding: 20px;
+      }
+      
+      .hero h1 {
+        font-size: 28px;
+      }
+      
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 10px 16px;
+      }
+      
+      .container {
+        padding: 0 12px;
+      }
+      
+      .panel {
+        padding: 16px;
+      }
+      
+      .hero h1 {
+        font-size: 24px;
+      }
+      
+      .mobile-nav {
+        width: 85%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="progress-bar"></div>
+
+  <!-- Header -->
+    <header>
+    <div class="container nav-container">
+      <div class="logo"><a href="index.html">MOHAMED ASMATHULLA G</a></div>
+      <div style="display:flex; align-items:center;">
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications</a>
+          <a href="awards.html">Awards</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle">??</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">✕</button>
+    <a href="index.html">Portfolio</a>
+    <a href="certifications.html" class="active">Certifications</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero panel">
+      <h1>Professional Certifications</h1>
+      <div class="subtitle">Validating expertise through continuous learning and skill development</div>
+      <p style="color: var(--muted); margin-top: 12px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        A comprehensive collection of certifications earned through dedicated learning across various domains of technology, data science, and software development.
+      </p>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="stat-card fade-in">
+        <div class="stat-number">23</div>
+        <div class="stat-label">Total Certifications</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number">8+</div>
+        <div class="stat-label">Learning Platforms</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Technology Domains</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number">2021-2024</div>
+        <div class="stat-label">Learning Period</div>
+      </div>
+    </section>
+
+    <!-- Certifications Grid -->
+    <section class="panel fade-in">
+      <h2 style="margin-bottom: 20px; color: var(--accent);">Certification Portfolio</h2>
+      <div class="certifications-grid">
+        <!-- Published Journey Paper -->
+        <div class="cert-card">
+          <div class="cert-number">1</div>
+          <div class="cert-title">Published Journey Paper Certificate</div>
+          <div class="cert-provider">Research Publication</div>
+          <div class="cert-category">Research & Publication</div>
+        </div>
+
+        <!-- Full Stack -->
+        <div class="cert-card">
+          <div class="cert-number">2</div>
+          <div class="cert-title">Master Class of Full Stack Development</div>
+          <div class="cert-provider">Professional Training</div>
+          <div class="cert-category">Web Development</div>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="cert-card">
+          <div class="cert-number">3</div>
+          <div class="cert-title">Master Class of Data Analysis</div>
+          <div class="cert-provider">Professional Training</div>
+          <div class="cert-category">Data Analytics</div>
+        </div>
+
+        <!-- Data Science - Almabetter -->
+        <div class="cert-card">
+          <div class="cert-number">4</div>
+          <div class="cert-title">Completion of Data Science</div>
+          <div class="cert-provider">Almabetter</div>
+          <div class="cert-category">Data Science</div>
+        </div>
+
+        <!-- CSS - Codeliber -->
+        <div class="cert-card">
+          <div class="cert-number">5</div>
+          <div class="cert-title">Completion of CSS</div>
+          <div class="cert-provider">Codeliber</div>
+          <div class="cert-category">Web Development</div>
+        </div>
+
+        <!-- Programming Languages - Great Learning -->
+        <div class="cert-card">
+          <div class="cert-number">6</div>
+          <div class="cert-title">Basics of Common Programming Languages</div>
+          <div class="cert-provider">Great Learning</div>
+          <div class="cert-category">Programming</div>
+        </div>
+
+        <!-- Machine Learning - Great Learning -->
+        <div class="cert-card">
+          <div class="cert-number">7</div>
+          <div class="cert-title">Completion of Machine Learning</div>
+          <div class="cert-provider">Great Learning</div>
+          <div class="cert-category">Machine Learning</div>
+        </div>
+
+        <!-- R Programming - Great Learning -->
+        <div class="cert-card">
+          <div class="cert-number">8</div>
+          <div class="cert-title">Basics of R Programming Language</div>
+          <div class="cert-provider">Great Learning</div>
+          <div class="cert-category">Data Science</div>
+        </div>
+
+        <!-- IDS Ecosystem -->
+        <div class="cert-card">
+          <div class="cert-number">9</div>
+          <div class="cert-title">Participation in IDS Ecosystem</div>
+          <div class="cert-provider">Industry Program</div>
+          <div class="cert-category">Ecosystem</div>
+        </div>
+
+        <!-- Internship Studio -->
+        <div class="cert-card">
+          <div class="cert-number">10</div>
+          <div class="cert-title">Participation in Internship Test</div>
+          <div class="cert-provider">Internship Studio</div>
+          <div class="cert-category">Professional Development</div>
+        </div>
+
+        <!-- Let's Upgrade Certifications -->
+        <div class="cert-card">
+          <div class="cert-number">11</div>
+          <div class="cert-title">Completion of Data Science</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Data Science</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">12</div>
+          <div class="cert-title">Completion of Flutter</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Mobile Development</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">13</div>
+          <div class="cert-title">Completion of HTML</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Web Development</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">14</div>
+          <div class="cert-title">Completion of Java</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Programming</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">15</div>
+          <div class="cert-title">Completion of JavaScript</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Web Development</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">16</div>
+          <div class="cert-title">Completion of Looker Studio</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Data Visualization</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">17</div>
+          <div class="cert-title">Completion of Python Libraries</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Data Science</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">18</div>
+          <div class="cert-title">Completion of SQL</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Database</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">19</div>
+          <div class="cert-title">Completion of Sheets Bootcamp</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Data Analytics</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">20</div>
+          <div class="cert-title">Completion of Tailwind CSS</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Web Development</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">21</div>
+          <div class="cert-title">Data Analytics using Power BI Bootcamp</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Data Analytics</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">22</div>
+          <div class="cert-title">Google Sheets Bootcamp</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Data Analytics</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-number">23</div>
+          <div class="cert-title">Machine Learning with Python Bootcamp</div>
+          <div class="cert-provider">Let's Upgrade</div>
+          <div class="cert-category">Machine Learning</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="panel fade-in" style="text-align: center; margin-top: 28px;">
+      <h3 style="margin-bottom: 16px; color: var(--accent);">Ready to Collaborate?</h3>
+      <p style="color: var(--muted); margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        With a strong foundation in multiple technologies and continuous learning, I'm prepared to take on challenging projects and deliver exceptional results.
+      </p>
+      <a href="index.html#contact" class="btn">Get In Touch</a>
+    </section>
+  </main>
+
+  <footer class="panel">
+    <div style="font-weight:700">Let's build something — <span style="color:var(--accent)">python.asmath1290@gmail.com</span></div>
+    <div style="margin-top:8px; color:var(--muted)">© Mohamed Asmathulla G • Ingen Dynamics • Chettinad College of Engineering & Technology</div>
+  </footer>
+
+  <script>
+    // DOM elements
+    const progressBar = document.querySelector('.progress-bar');
+    const themeToggle = document.getElementById('themeToggle');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileNavClose = document.getElementById('mobileNavClose');
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Check for saved theme preference
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+        themeToggle.textContent = '☀️';
+      }
+      
+      // Initial fade in check
+      fadeInOnScroll();
+    });
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const winHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+      progressBar.style.width = `${scrollPercent}%`;
+      
+      // Header scroll effect
+      const header = document.querySelector('header');
+      if (scrollTop > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Fade in elements on scroll
+    const fadeInOnScroll = () => {
+      fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', fadeInOnScroll);
+
+    // Theme toggle
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      if (document.body.classList.contains('light-theme')) {
+        themeToggle.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeToggle.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // Mobile menu
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileNav.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    mobileNavClose.addEventListener('click', () => {
+      mobileNav.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (mobileNav.classList.contains('active') && 
+          !mobileNav.contains(e.target) && 
+          e.target !== mobileMenuBtn) {
+        mobileNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Performance optimization - lazy load images
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        img.loading = 'lazy';
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
