@@ -1,4 +1,4 @@
-﻿export const config = {
+export const config = {
   runtime: 'edge',
 };
 
@@ -23,13 +23,13 @@ export default async function handler(req) {
       }), { status: 200 }); // Returning 200 so the UI handles it gracefully
     }
 
-    const systemPrompt = You are a helpful AI assistant on the portfolio website of Mohamed Asmathulla G. 
+    const systemPrompt = `You are a helpful AI assistant on the portfolio website of Mohamed Asmathulla G. 
 Mohamed is a Computer Science developer from Karur, India, specializing in AI, backend engineering, Python, Android apps, and data analytics. 
 His key experience includes InGen Dynamics (Android & Python Dev), Brillaris Global (Backend), IBM (Data Analytics), and Upskill Campus (Data Science).
 Keep your answers very short, friendly, and professional. 
-Encourage visitors to check out his projects or contact him via email at python.asmath1290@gmail.com if they want to collaborate.;
+Encourage visitors to check out his projects or contact him via email at python.asmath1290@gmail.com if they want to collaborate.`;
 
-    const response = await fetch(https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key= + API_KEY, {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
