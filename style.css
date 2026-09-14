@@ -132,7 +132,7 @@ footer { background-color: var(--card-bg); padding: 60px 0 40px; border-top: 1px
 }
 @media (max-width: 768px) {
   .footer-content { grid-template-columns: 1fr; gap: 40px; }
-  .nav-links { display: none; }
+  .nav-links { display: none; position: absolute; top: 70px; left: 0; width: 100%; background: var(--bg); flex-direction: column; padding: 20px 0; box-shadow: 0 10px 15px rgba(0,0,0,0.1); z-index: 1000; } .nav-links.active { display: flex; } .nav-links a { margin: 10px 20px; font-size: 1.1rem; }
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
 }
 
@@ -273,4 +273,20 @@ footer { background-color: var(--card-bg); padding: 60px 0 40px; border-top: 1px
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-main);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 15px;
+}
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
 }
